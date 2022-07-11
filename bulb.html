@@ -11,14 +11,16 @@
   </head>
   <body onload="always()">
     <div id="app">
+       <img class="switch" src="./images/switch.jpg">
         <button class="btn" @click="controlBulb">
             {{buttontxt}}
         </button>
+
         <div id="on">
             
         </div>
-        <div id="off">
-            {{always}}
+        <div id="off" v-if = 'beginshow === "start"'>
+            <img src="./images/bulb-off.jpg">
         </div>
     </div>
 

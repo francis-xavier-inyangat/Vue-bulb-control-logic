@@ -1,8 +1,12 @@
 const appInstance = {
   data() {
     return {
-        
+        // begin with off state image
+        beginshow: 'start',
+
+        // set bulb state
         state:1,
+        // switch button state
         buttontxt: "TURN ON",
         
     };
@@ -11,7 +15,7 @@ const appInstance = {
     controlBulb: function () {
         const lightoff = document.querySelector("#on");
         const lighton = document.querySelector("#on");
-                
+                this.beginshow = 'started';
         if(this.state <= 0){
             lighton.innerHTML = ""
             lightoff.innerHTML = ""
