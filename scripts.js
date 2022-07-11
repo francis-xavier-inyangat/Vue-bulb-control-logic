@@ -31,9 +31,7 @@ const appInstance = {
             this.buttontxt = "TURN OFF"
         }
     },
-    always: function (){
-        lightoff.innerHTML = '<img src="./images/bulb-off.jpg">'
-      }
+   
   },
  };
 

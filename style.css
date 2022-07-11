@@ -31,6 +31,11 @@
     font-weight: 600;
     cursor: pointer;
 }
+.btn:hover{
+    color: red;
+    background-color: #fff;
+    border: 3px solid red;
+}
 
 .switch{
     height: 50px;
